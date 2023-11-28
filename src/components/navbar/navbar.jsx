@@ -5,9 +5,9 @@ import '../../tailwind.css';
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
-  const closeMenu = () => {
-    setIsOpen(false);
-  };
+  // const closeMenu = () => {
+  //   setIsOpen(false);
+  // };
 
 	return (
     <nav className="bg-transparent text-white pt-4 fixed w-full z-50">
