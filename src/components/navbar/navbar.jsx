@@ -41,7 +41,7 @@ const Navbar = () => {
 				 {/* For large screens, the links are always visible */}
          <div className="hidden md:flex lg:flex-grow lg:items-center lg:justify-end">
       <Link to="/" className="px-3 py-2 rounded hover:bg-gray-700 hover:text-white font-bold">Home</Link>
-      <Link to="projects" className="px-3 py-2 rounded hover:bg-gray-700 hover:text-white font-bold">Projects</Link>
+      <Link to="services" className="px-3 py-2 rounded hover:bg-gray-700 hover:text-white font-bold">Services</Link>
       <Link to="about" className="px-3 py-2 rounded hover:bg-gray-700 hover:text-white font-bold">About</Link>
       <Link to="contact" className="px-3 py-2 rounded hover:bg-gray-700 hover:text-white font-bold">Contact</Link>
     </div>
