@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import './App.css';
+import './tailwind.css';
 import LandingPage from './components/landingPage/landingPage';
 import About from './components/about/about';
 import Contact from './components/contact/contact';
