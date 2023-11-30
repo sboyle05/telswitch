@@ -4,7 +4,7 @@ import './about.css';
 const About = () => {
 	return (
 		<section className='aboutContainer'>
-			<h1>About</h1>
+			<h1 >About</h1>
 			<p>
 				In sum, TelSwitch, Inc. is deeply rooted in its ethical approach toward
 				the meaningful dissemination of large amounts of data in a way that
