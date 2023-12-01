@@ -84,25 +84,25 @@ const Navbar = () => {
 						Home
 					</Link>
 					<Link
-						to='projects'
+						to='services'
 						className='px-3 py-2 font-bold rounded hover:bg-gray-700 hover:text-white text-center '
 						onClick={closeMenu}
 					>
-						Projects
+						Our Services
 					</Link>
 					<Link
 						to='about'
 						className='px-3 py-2 font-bold rounded hover:bg-gray-700 hover:text-white text-center '
 						onClick={closeMenu}
 					>
-						About
+						About Us
 					</Link>
 					<Link
 						to='contact'
 						className='px-3 py-2 font-bold rounded hover:bg-gray-700 hover:text-white text-center '
 						onClick={closeMenu}
 					>
-						Contact
+						Contact Us
 					</Link>
 				</div>
 			</div>

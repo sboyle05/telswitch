@@ -1,23 +1,38 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import './about.css';
+import { fetchEntry } from '../../contenfulService';
+import '../../tailwind.css';
 
 const About = () => {
+	const [content, setContent] = useState(null);
+
+	useEffect(() => {
+		const entryId = '6uKPm0BU99vp7wKHFCWogI';
+		fetchEntry(entryId)
+			.then((entry) => {
+				console.log(entry);
+				setContent(entry.fields);
+			})
+			.catch((error) => {
+				console.error('Error fetching content', error);
+			});
+	}, []);
+
 	return (
-		<section className='aboutContainer'>
-			<h1 >About</h1>
-			<p>
-				In sum, TelSwitch, Inc. is deeply rooted in its ethical approach toward
-				the meaningful dissemination of large amounts of data in a way that
-				brings understanding of the rhythms of life’s digital fingerprints. The
-				tapestry of data is woven into the very fabric of TelSwitch, Inc.
-				Whether TelSwitch, Inc. is engaged by legal teams in high-stakes
-				litigation involving corporate disputes or individual cases, our
-				data-driven approach equips our clients with a robust, evidence-based
-				foundation for legal strategy. At Telswitch, we don't just analyze data;
-				we illuminate the story behind the numbers, providing you with a
-				strategic edge in the courtroom.
+		<section className='aboutContainer mt-24 ml-8 mr-8'>
+			{content ? (
+				<>
+			<h1 className='mt-4 font-bold text-2xl'>{content.aboutTitle}</h1>
+			<p className='mt-4'>
+				{content.aboutParagraph && documentToReactComponents(content.aboutParagraph)}
 			</p>
+			</>
+			) : (
+			<p>Loading...</p>
+			)}
 		</section>
+
 	);
 };
 
