@@ -38,7 +38,7 @@ const LandingPage = () => {
 
                         {/* Text Overlay */}
                         <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center">
-                            <p className="textOverlay">Helping to put the pieces together</p>
+                            <p className="textOverlay">Bringing Insight Into Life’s Digital Fingerprints</p>
                         </div>
                     </div>
                 </div>
