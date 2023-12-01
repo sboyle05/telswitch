@@ -26,18 +26,23 @@ const LandingPage = () => {
 					<h1 className='text-5xl font-bold'>{content.title}</h1>
 
 					{content.landingpageImage && (
-        <div className="w-full relative overflow-hidden">
-          {/* Use responsive classes to adjust the max height at different breakpoints */}
-					<div className="w-full relative overflow-hidden">
-    <img
-      className='w-full object-cover max-h-[desired-max-height]'
-      style={{ maxHeight: '45vh' }} // This caps the height to 75% of the viewport height
-      src={content.landingpageImage.fields.file.url}
-      alt='Landing Page'
-    />
-  </div>
-        </div>
-      )}
+                <div className="w-full relative overflow-hidden">
+                    {/* Image Container */}
+                    <div className="w-full relative overflow-hidden">
+                        <img
+                            className='w-full object-cover max-h-[desired-max-height]'
+                            style={{ maxHeight: '55vh' }}
+                            src={content.landingpageImage.fields.file.url}
+                            alt='Landing Page'
+                        />
+
+                        {/* Text Overlay */}
+                        <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center">
+                            <p className="textOverlay">Helping to put the pieces together</p>
+                        </div>
+                    </div>
+                </div>
+            )}
 					<div className='text-blue mt-4 text-xl ml-10 mr-10 mx-auto max-w-screen-lg '>
 					{content.briefAbout && documentToReactComponents(content.briefAbout)}
 					</div>

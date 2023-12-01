@@ -1,0 +1,9 @@
+.textOverlay{
+  font-family: 'Oxygen', sans-serif;
+  font-size: 3rem;
+  font-weight: 1000;
+  color: whitesmoke;
+  background-color: rgba(0, 49, 81, 0.7);
+  border-radius: 15px;
+  padding: 10px;
+}
