@@ -1,17 +1,18 @@
 .listedServices{
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .individualService{
   display: flex;
   flex-direction: row;
   align-items: center;
-
+  margin-bottom: 50px;
 }
 
 .serviceImg{
-  max-width: 45vw;
+  max-width: 40vw;
   border-radius: 15px;
 }
 

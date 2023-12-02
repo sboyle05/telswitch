@@ -43,7 +43,7 @@ const Services = () => {
 			<img
 			className='serviceImg'
 			src={content.databaseImg.fields.file.url}
-			alt='telecom tower'/>
+			alt='office workers'/>
 			<section className='textSectionRight'>
 			<h2 className='mt-4 font-bold text-lg'>{content.deplTitle}</h2>
 			<p className='mt-4'>
@@ -52,10 +52,17 @@ const Services = () => {
 			</section>
 			</section>
 			<section className='individualService'>
+			<section className='textSectionLeft'>
 			<h2 className='mt-4 font-bold text-lg'>{content.tcpaTitle}</h2>
 			<p className='mt-4'>
 				{content.telephoneConsumerProtectionAct && documentToReactComponents(content.telephoneConsumerProtectionAct)}
 			</p>
+			</section>
+			<img
+			className='serviceImg'
+			src={content.tcpaImage
+				.fields.file.url}
+			alt='lady justice'/>
 			</section>
 			</section>
 			</>
