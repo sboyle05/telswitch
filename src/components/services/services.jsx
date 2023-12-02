@@ -25,18 +25,39 @@ const Services = () => {
 	{content ? (
 		<>
 			<h1 className='mt-4 font-bold text-2xl'>{content.services}</h1>
+			<section className='listedServices'>
+
+			<section className='individualService'>
+			<section className='textSectionLeft'>
 			<h2 className='mt-4 font-bold text-lg'>{content.tsbTitle}</h2>
 			<p className='mt-4'>
 				{content.telecommunicationsServicesAndBilling && documentToReactComponents(content.telecommunicationsServicesAndBilling)}
 			</p>
+			</section>
+			<img
+			className='serviceImg'
+			src={content.teleComImg.fields.file.url}
+			alt='telecom tower'/>
+			</section>
+			<section className='individualService'>
+			<img
+			className='serviceImg'
+			src={content.databaseImg.fields.file.url}
+			alt='telecom tower'/>
+			<section className='textSectionRight'>
 			<h2 className='mt-4 font-bold text-lg'>{content.deplTitle}</h2>
 			<p className='mt-4'>
 				{content.databaseExpertiseForPurposesOfLitigation && documentToReactComponents(content.databaseExpertiseForPurposesOfLitigation)}
 			</p>
+			</section>
+			</section>
+			<section className='individualService'>
 			<h2 className='mt-4 font-bold text-lg'>{content.tcpaTitle}</h2>
 			<p className='mt-4'>
 				{content.telephoneConsumerProtectionAct && documentToReactComponents(content.telephoneConsumerProtectionAct)}
 			</p>
+			</section>
+			</section>
 			</>
 	) : (
 		<p>Loading...</p>
