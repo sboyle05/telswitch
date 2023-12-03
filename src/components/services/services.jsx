@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './services.css';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import './services.css';
-import { fetchEntry, fetchEntries } from '../../contenfulService';
+import { fetchEntries } from '../../contenfulService';
 import '../../tailwind.css';
 
 const Services = () => {
@@ -32,7 +32,7 @@ const Services = () => {
 								paragraph: (node, children) => (
 									<p
 										className={`${
-											index % 2 === 0 ? 'textSectionRight' : 'textSectionLeft'
+											index % 2 === 0 ? 'textSectionLeft' : 'textSectionRight'
 										}`}
 									>
 										{children}
@@ -58,8 +58,12 @@ const Services = () => {
 										index % 2 === 0 ? 'textSectionLeft' : 'textSectionRight'
 									}`}
 								>
-									<h2 className='font-bold text-lg'>
-										{serviceEntry.fields.serviceTitle}
+									<h2
+										className={`font-bold text-lg ${
+											index % 2 === 0 ? 'textSectionLeft' : 'textSectionRight'
+										}`}
+									>
+										{serviceEntry.fields.title}
 									</h2>
 									{serviceEntry.fields.serviceDescription &&
 										documentToReactComponents(

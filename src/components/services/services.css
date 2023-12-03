@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .serviceImg{
@@ -17,11 +17,11 @@
 }
 
 .textSectionLeft{
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .textSectionRight{
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .individualService:nth-child(even) {
