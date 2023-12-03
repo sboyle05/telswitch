@@ -11,7 +11,14 @@ const fetchEntry = (entryId) => {
   return client.getEntry(entryId);
 };
 
+// Define the fetchEntries function
+const fetchEntries = (query) => {
+  return client.getEntries(query);
+};
+
+
 // Export the fetchEntry function
 module.exports = {
   fetchEntry,
+  fetchEntries
 };

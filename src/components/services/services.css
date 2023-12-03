@@ -1,0 +1,33 @@
+.listedServices{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.individualService{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.serviceImg{
+  max-width: 40vw;
+  border-radius: 15px;
+}
+
+.textSectionLeft{
+  margin-left: 20px;
+}
+
+.textSectionRight{
+  margin-right: 20px;
+}
+
+.individualService:nth-child(even) {
+  flex-direction: row;
+}
+
+.individualService:nth-child(odd) {
+  flex-direction: row-reverse;
+}
