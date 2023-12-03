@@ -2,73 +2,78 @@ import React, { useState, useEffect } from 'react';
 import './services.css';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import './services.css';
-import { fetchEntry } from '../../contenfulService';
+import { fetchEntry, fetchEntries } from '../../contenfulService';
 import '../../tailwind.css';
-
 
 const Services = () => {
 	const [content, setContent] = useState(null);
 
 	useEffect(() => {
-		const entryId = 'jQyp7mKdJ8fZTM9k6yyWH';
-		fetchEntry(entryId)
-			.then((entry) => {
-				console.log(entry);
-				setContent(entry.fields);
+		fetchEntries({ content_type: 'service', order: 'sys.createdAt' })
+			.then((response) => {
+				console.log(response.items);
+				setContent(response.items);
 			})
 			.catch((error) => {
 				console.error('Error fetching content', error);
 			});
 	}, []);
+
 	return (
 		<section className='servicesContainer mt-24 ml-8 mr-8'>
-	{content ? (
-		<>
-			<h1 className='mt-4 font-bold text-2xl'>{content.services}</h1>
-			<section className='listedServices'>
+			{content ? (
+				<>
+					<h1 className='mt-4 font-bold text-2xl'>
+						{content[0].fields.services}
+					</h1>
+					{content.map((serviceEntry, index) => {
+						const options = {
+							renderNode: {
+								paragraph: (node, children) => (
+									<p
+										className={`${
+											index % 2 === 0 ? 'textSectionRight' : 'textSectionLeft'
+										}`}
+									>
+										{children}
+									</p>
+								),
+							},
+						};
 
-			<section className='individualService'>
-			<section className='textSectionLeft'>
-			<h2 className='mt-4 font-bold text-lg'>{content.tsbTitle}</h2>
-			<p className='mt-4'>
-				{content.telecommunicationsServicesAndBilling && documentToReactComponents(content.telecommunicationsServicesAndBilling)}
-			</p>
-			</section>
-			<img
-			className='serviceImg'
-			src={content.teleComImg.fields.file.url}
-			alt='telecom tower'/>
-			</section>
-			<section className='individualService'>
-			<img
-			className='serviceImg'
-			src={content.databaseImg.fields.file.url}
-			alt='office workers'/>
-			<section className='textSectionRight'>
-			<h2 className='mt-4 font-bold text-lg'>{content.deplTitle}</h2>
-			<p className='mt-4'>
-				{content.databaseExpertiseForPurposesOfLitigation && documentToReactComponents(content.databaseExpertiseForPurposesOfLitigation)}
-			</p>
-			</section>
-			</section>
-			<section className='individualService'>
-			<section className='textSectionLeft'>
-			<h2 className='mt-4 font-bold text-lg'>{content.tcpaTitle}</h2>
-			<p className='mt-4'>
-				{content.telephoneConsumerProtectionAct && documentToReactComponents(content.telephoneConsumerProtectionAct)}
-			</p>
-			</section>
-			<img
-			className='serviceImg'
-			src={content.tcpaImage
-				.fields.file.url}
-			alt='lady justice'/>
-			</section>
-			</section>
-			</>
-	) : (
-		<p>Loading...</p>
-	)}
+						return (
+							<section
+								key={serviceEntry.sys.id}
+								className={`individualService ${
+									index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
+								}`}
+							>
+								<img
+									className='serviceImg'
+									src={serviceEntry.fields.serviceImage.fields.file.url}
+									alt={serviceEntry.fields.serviceTitle}
+								/>
+								<div
+									className={`textSection ${
+										index % 2 === 0 ? 'textSectionLeft' : 'textSectionRight'
+									}`}
+								>
+									<h2 className='font-bold text-lg'>
+										{serviceEntry.fields.serviceTitle}
+									</h2>
+									{serviceEntry.fields.serviceDescription &&
+										documentToReactComponents(
+											serviceEntry.fields.serviceDescription,
+											options
+										)}
+								</div>
+							</section>
+						);
+					})}
+				</>
+			) : (
+				<p>Loading...</p>
+			)}
 		</section>
 	);
 };

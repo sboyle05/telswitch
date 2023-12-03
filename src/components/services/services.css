@@ -23,3 +23,11 @@
 .textSectionRight{
   margin-left: 20px;
 }
+
+.individualService:nth-child(even) {
+  flex-direction: row;
+}
+
+.individualService:nth-child(odd) {
+  flex-direction: row-reverse;
+}
