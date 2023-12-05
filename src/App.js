@@ -9,6 +9,7 @@ import Navbar from './components/navbar/navbar'
 import Services from './components/services/services';
 import { fetchEntries } from './contenfulService';
 import IndividualService from './components/individualService/individualService';
+import Footer from './components/footer/footer';
 function App() {
   const [content, setContent] = useState(null);
 
@@ -25,6 +26,7 @@ function App() {
   return (
     <Router>
       <Navbar/>
+      <div className="contentWrapper">
       <Routes>
         <Route path='/' element={<LandingPage/>}/>
         <Route path='/about' element={<About/>}/>
@@ -52,6 +54,8 @@ function App() {
             return null;
           })}
       </Routes>
+      </div>
+      <Footer/>
     </Router>
   );
 }

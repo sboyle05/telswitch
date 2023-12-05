@@ -72,7 +72,7 @@ const IndividualService = ({ serviceTitle, serviceEntry }) => {
         </div>
       )}
     </section>
-    <Footer/>
+
     </>
   );
 };

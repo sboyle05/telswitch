@@ -93,7 +93,7 @@ const Services = () => {
 					<p>Loading...</p>
 				)}
 			</section>
-			<Footer />
+
 		</>
 	);
 };
