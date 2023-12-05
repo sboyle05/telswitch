@@ -4,6 +4,7 @@ import './services.css';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { fetchEntries } from '../../contenfulService';
 import '../../tailwind.css';
+import Footer from '../footer/footer';
 
 const Services = () => {
     const [content, setContent] = useState(null);
@@ -20,6 +21,7 @@ const Services = () => {
     }, []);
 
     return (
+			<>
         <section className='servicesContainer mt-24 ml-8 mr-8'>
             {content ? (
                 <>
@@ -78,6 +80,8 @@ const Services = () => {
                 <p>Loading...</p>
             )}
         </section>
+				<Footer/>
+				</>
     );
 };
 

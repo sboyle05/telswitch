@@ -7,6 +7,10 @@
   border-bottom: 5px solid #003151;
 }
 
+.serviceContainer{
+  min-height: 82vh;
+}
+
 .service-detail-paragraph {
   margin-left: 20px;
 }
@@ -19,11 +23,11 @@
 .commentTextImage {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .commentTitle {
   margin-bottom: 5px;
-  margin-top: 10px;
 }
 
 .commentImage {

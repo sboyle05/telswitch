@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import './individualService.css';
+import Footer from '../footer/footer';
 
 const IndividualService = ({ serviceTitle, serviceEntry }) => {
   const [previewImage, setPreviewImage] = useState(null);
@@ -25,7 +26,8 @@ const IndividualService = ({ serviceTitle, serviceEntry }) => {
   };
 
   return (
-    <section className="serviceContainer mt-24 ml-8 mr-8">
+  <>
+      <section className="serviceContainer mt-24 ml-8 mr-8">
       <h1 className="service-detail-title mt-4 font-bold text-2xl">{serviceTitle}</h1>
       <section className='textImage'>
         <img
@@ -69,8 +71,9 @@ const IndividualService = ({ serviceTitle, serviceEntry }) => {
           </div>
         </div>
       )}
-
     </section>
+    <Footer/>
+    </>
   );
 };
 
