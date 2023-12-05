@@ -1,3 +1,25 @@
 /* .aboutContainer{
   min-height: 82vh;
 } */
+
+.aboutContainer{
+  display: flex;
+  flex-direction: row;
+}
+.aboutText{
+
+}
+.aboutImage{
+  max-height: 30vh;
+}
+
+@media (max-width: 800px) {
+  .aboutContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutImage{
+    max-height: 40vh;
+    max-width: 50vh;
+  }
+}
