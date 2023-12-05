@@ -1,0 +1,10 @@
+.contactImage{
+  max-height: 45vh;
+  width: 100%;
+}
+
+.contactContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
