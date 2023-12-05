@@ -12,7 +12,6 @@ const About = () => {
 		const entryId = '6uKPm0BU99vp7wKHFCWogI';
 		fetchEntry(entryId)
 			.then((entry) => {
-				console.log(entry);
 				setContent(entry.fields);
 			})
 			.catch((error) => {

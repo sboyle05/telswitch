@@ -12,7 +12,6 @@ const Services = () => {
 	useEffect(() => {
 		fetchEntries({ content_type: 'service', order: 'sys.createdAt' })
 			.then((response) => {
-				console.log(response.items);
 				setContent(response.items);
 			})
 			.catch((error) => {

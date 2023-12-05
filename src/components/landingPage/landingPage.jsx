@@ -12,7 +12,6 @@ const LandingPage = () => {
 		const entryId = '1EirkGrxEZLiKshv21CELR';
 		fetchEntry(entryId)
 			.then((entry) => {
-				console.log(entry);
 				setContent(entry.fields);
 			})
 			.catch((error) => {
