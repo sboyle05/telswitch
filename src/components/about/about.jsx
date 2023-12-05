@@ -3,7 +3,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import './about.css';
 import { fetchEntry } from '../../contenfulService';
 import '../../tailwind.css';
-import Footer from '../footer/footer';
+
 
 const About = () => {
 	const [content, setContent] = useState(null);

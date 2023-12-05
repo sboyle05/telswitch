@@ -1,24 +1,23 @@
-
 .footerContainer {
-  background-color: '#003151';
+  background-color: #003151;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 20px;
+  justify-content: flex-end;
+  padding: 15px 20px;
+  width: 100%;
 }
 
-
-
-.linkContainer{
+.linkContainer {
   display: flex;
+  justify-content: flex-end;
+  width: 100%;
   align-items: center;
-  justify-content: center;
+  margin-right: 40px;
 }
 
-.footerLink{
+.footerLink {
   font-weight: 700;
-}
-
-.footerLink{
+  color: white;
   margin-left: 10px;
+  text-decoration: none;
 }
