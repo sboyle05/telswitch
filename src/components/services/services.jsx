@@ -4,7 +4,7 @@ import './services.css';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { fetchEntries } from '../../contenfulService';
 import '../../tailwind.css';
-import Footer from '../footer/footer';
+
 
 const Services = () => {
 	const [content, setContent] = useState(null);

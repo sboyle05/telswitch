@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import './individualService.css';
-import Footer from '../footer/footer';
+;
 
 const IndividualService = ({ serviceTitle, serviceEntry }) => {
   const [previewImage, setPreviewImage] = useState(null);
