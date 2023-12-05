@@ -5,7 +5,6 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { fetchEntries } from '../../contenfulService';
 import '../../tailwind.css';
 
-
 const Services = () => {
 	const [content, setContent] = useState(null);
 
@@ -93,7 +92,6 @@ const Services = () => {
 					<p>Loading...</p>
 				)}
 			</section>
-
 		</>
 	);
 };

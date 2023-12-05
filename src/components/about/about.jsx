@@ -25,12 +25,12 @@ const About = () => {
 			{content ? (
 				<>
 			<h1 className='mt-4 font-bold text-2xl'>{content.aboutTitle}</h1>
-			<p className='mt-4'>
+			<div className='mt-4'>
 				{content.aboutParagraph && documentToReactComponents(content.aboutParagraph)}
-			</p>
+			</div>
 			</>
 			) : (
-			<p>Loading...</p>
+				<p>Loading...</p>
 			)}
 		</section>
 

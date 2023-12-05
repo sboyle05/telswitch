@@ -1,15 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false,
   theme: {
     extend: {
       height: {
         '22': '9vh',
       },
       maxHeight: {
-        '(custom-lg-value)': '22rem', // or whatever value you choose
-        '(custom-xl-value)': '26rem', // or whatever value you choose
+        '(custom-lg-value)': '22rem',
+        '(custom-xl-value)': '26rem',
       },
       colors: {
         brown: {
