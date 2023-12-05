@@ -17,13 +17,13 @@ const Services = () => {
 				console.error('Error fetching content', error);
 			});
 	}, []);
-
+	console.log("CONTENT::", content)
 	return (
 		<>
 			<section className='servicesContainer mt-24 ml-8 mr-8'>
 				{content ? (
 					<>
-						<h1 className='mt-4 font-bold text-2xl'>
+						<h1 className='servicesTitle mt-4 font-bold text-2xl'>
 							{content[0].fields.services}
 						</h1>
 						{content.map((serviceEntry, index) => {
