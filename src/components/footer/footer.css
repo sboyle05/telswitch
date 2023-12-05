@@ -1,0 +1,26 @@
+body,
+html, #root {
+	margin: 0;
+	padding: 0;
+}
+.footerContainer {
+  background-color: '#003151';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.linkContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerLink{
+  font-weight: 700;
+}
+
+.footerLink{
+  margin-left: 10px;
+}

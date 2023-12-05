@@ -3,6 +3,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import './landingPage.css';
 import { fetchEntry } from '../../contenfulService';
 import '../../tailwind.css';
+import Footer from '../footer/footer';
 
 const LandingPage = () => {
 	const [content, setContent] = useState(null);
@@ -20,6 +21,7 @@ const LandingPage = () => {
 	}, []);
 
 	return (
+		<>
 		<section className='landingPageContainer mt-20'>
 			{content ? (
 				<>
@@ -58,6 +60,8 @@ const LandingPage = () => {
 				<p>Loading...</p>
 			)}
 		</section>
+		<Footer/>
+		</>
 	);
 };
 
