@@ -59,7 +59,7 @@ const LandingPage = () => {
 				<p>Loading...</p>
 			)}
 		</section>
-		<Footer/>
+
 		</>
 	);
 };

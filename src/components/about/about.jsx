@@ -33,7 +33,7 @@ const About = () => {
 			<p>Loading...</p>
 			)}
 		</section>
-		<Footer/>
+
 		</>
 	);
 };
