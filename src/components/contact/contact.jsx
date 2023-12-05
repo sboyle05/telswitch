@@ -9,7 +9,7 @@ const Contact = () => {
     <section className='contactContainer'>
       <h1 className=' mt-24 font-bold text-2xl'>Contact</h1>
     </section>
-    <Footer/>
+
     </>
   )
 }

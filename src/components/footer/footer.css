@@ -1,8 +1,4 @@
-body,
-html, #root {
-	margin: 0;
-	padding: 0;
-}
+
 .footerContainer {
   background-color: '#003151';
   display: flex;
@@ -10,6 +6,8 @@ html, #root {
   justify-content: center;
   margin-top: 20px;
 }
+
+
 
 .linkContainer{
   display: flex;
