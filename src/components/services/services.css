@@ -82,11 +82,13 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+    max-width: 90vh;
+    margin-left: 0;
   }
 
   .serviceImg{
     margin-top: 10px;
-    max-width: 90vw;
+    width: 90vw;
     max-height: 40vh;
     object-fit: cover;
     border-radius: 15px;
@@ -98,6 +100,7 @@
   }
   .textSectionLeft{
     margin-left: 20px;
+    width: 90vw;
   }
   .textSectionRightLink{
     margin-top: 10px;
@@ -112,11 +115,13 @@
     justify-content: center;
     align-items: center;
   }
-}
 
-@media (max-width: 807px) {
+
+
   .textSectionLeft, .textSectionRight{
-    margin-left: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 90vw;
   }
   .textSectionRightLink, .textSectionLeftLink{
     margin-top: 10px;
@@ -125,6 +130,5 @@
     justify-content:space-between;
 
   }
-
 
 }

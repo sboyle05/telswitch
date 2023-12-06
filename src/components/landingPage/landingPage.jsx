@@ -28,7 +28,7 @@ const LandingPage = () => {
 
 					{content.landingpageImage && (
 						<div className='w-full relative overflow-hidden'>
-							{/* Image Container */}
+							{/* Video Container */}
 							<div className='w-full relative overflow-hidden'>
 								<video
 									autoPlay

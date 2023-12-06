@@ -1,6 +1,6 @@
 .navLinksLg{
 white-space: nowrap;
-/* margin-left: 10px; */
+
 }
 
 .navBarLogo{
@@ -13,13 +13,6 @@ white-space: nowrap;
   margin-bottom: 10px;
 }
 
-/* @media (min-width: 640px) { /* sm
-  .navContainer {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-  }
-}
-*/
 @media (max-width: 1024px) {
   .navContainer {
     margin-right: 0;
@@ -33,7 +26,6 @@ white-space: nowrap;
     margin-right: 0;
     padding-right: 0;
     padding-bottom: 8px;
-    /* margin-bottom: 20px; */
   }
 }
 
@@ -42,7 +34,6 @@ white-space: nowrap;
     margin-right: 0;
     padding-right: 0;
     padding-bottom: 0px;
-    /* margin-bottom: 20px; */
   }
   .navBarLogo{
     max-width: 50vh;
@@ -60,9 +51,9 @@ white-space: nowrap;
 @media (max-width: 358px) {
 
 .navContainer {
-  position: relative; /* This ensures absolute positioning is relative to the navbar */
+  position: relative;
   display: flex;
-  /* Rest of your styles */
+
 }
 .navButton{
   right: 1rem;
