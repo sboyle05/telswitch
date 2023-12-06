@@ -20,7 +20,7 @@ const Services = () => {
 	console.log("CONTENT::", content)
 	return (
 		<>
-			<section className='servicesContainer mt-24 ml-8 mr-8'>
+			<section className='servicesContainer mt-28 ml-8 mr-8'>
 				{content ? (
 					<>
 						<h1 className='servicesTitle mt-4 font-bold text-2xl'>
@@ -39,7 +39,7 @@ const Services = () => {
 									paragraph: (node, children) => (
 										<p
 											className={`${
-												index % 2 === 0 ? 'textSectionLeft' : 'textSectionRight'
+												index % 2 === 0 ? 'textSectionRight' : 'textSectionLeft'
 											}`}
 										>
 											{children}
@@ -62,7 +62,7 @@ const Services = () => {
 									/>
 									<div
 										className={`textSection ${
-											index % 2 === 0 ? 'textSectionLeft' : 'textSectionRight'
+											index % 2 === 0 ? 'textSectionRight' : 'textSectionLeft'
 										}`}
 									>
 										{/* Only render Link if path is defined */}
@@ -71,8 +71,8 @@ const Services = () => {
 												to={path}
 												className={`font-bold text-lg ${
 													index % 2 === 0
-														? 'textSectionLeft'
-														: 'textSectionRight'
+														? 'textSectionRightLink'
+														: 'textSectionLeftLink'
 												}`}
 											>
 												{serviceEntry.fields.title}
