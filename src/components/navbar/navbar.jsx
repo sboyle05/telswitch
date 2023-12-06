@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../../tailwind.css';
-
+import './navbar.css'
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
@@ -43,7 +43,7 @@ const Navbar = () => {
 				</button>
 
 				{/* For large screens, the links are always visible */}
-				<div className='hidden md:flex lg:flex-grow lg:items-center lg:justify-end'>
+				<div className='navLinksLg hidden md:flex lg:flex-grow lg:items-center lg:justify-end'>
 					<Link
 						to='/'
 						className='px-3 py-2 rounded hover:bg-gray-700 hover:text-white font-bold'

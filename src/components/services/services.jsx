@@ -78,9 +78,9 @@ const Services = () => {
 												{serviceEntry.fields.title}
 											</Link>
 										)}
-										{serviceEntry.fields.serviceDescription &&
+										{serviceEntry.fields.briefDescription &&
 											documentToReactComponents(
-												serviceEntry.fields.serviceDescription,
+												serviceEntry.fields.briefDescription,
 												options
 											)}
 									</div>
