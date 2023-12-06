@@ -17,11 +17,18 @@
 }
 
 .textSectionLeft{
+  margin-right: 20px;
+}
+.textSectionLeftLink{
+  margin-right: 20px;
+}
+
+.textSectionRightLink{
   margin-left: 20px;
 }
 
 .textSectionRight{
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .individualService:nth-child(even) {
@@ -32,7 +39,44 @@
   flex-direction: row-reverse;
 }
 
-@media (max-width: 965px) {
+@media (max-width: 989px) {
+  /* .individualService.flex-row, .individualService.flex-row-reverse{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+  } */
+
+  .serviceImg{
+    margin-top: 10px;
+    max-width: 90vw;
+    max-height: 30vh;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  .textSectionLeftLink{
+    margin-top: 10px;
+    display: flex;
+    justify-content:space-between;
+
+
+  }
+  .textSectionRightLink{
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    justify-content:space-between;
+
+  }
+
+  .servicesTitleContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 807px) {
   .individualService.flex-row, .individualService.flex-row-reverse{
     display: flex;
     flex-direction: column;
@@ -43,15 +87,24 @@
   .serviceImg{
     margin-top: 10px;
     max-width: 90vw;
-    max-height: 30vh;
+    max-height: 40vh;
     object-fit: cover;
     border-radius: 15px;
   }
-  .textSectionLeft, .textSectionRight{
+  .textSectionLeftLink{
     margin-top: 10px;
-    max-width: 550px;
-    margin-left: 0;
-    margin-right: 0;
+    display: flex;
+    justify-content:space-between;
+  }
+  .textSectionLeft{
+    margin-left: 20px;
+  }
+  .textSectionRightLink{
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    justify-content:space-between;
+
   }
 
   .servicesTitleContainer{
@@ -59,4 +112,19 @@
     justify-content: center;
     align-items: center;
   }
+}
+
+@media (max-width: 807px) {
+  .textSectionLeft, .textSectionRight{
+    margin-left: 20px;
+  }
+  .textSectionRightLink, .textSectionLeftLink{
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    justify-content:space-between;
+
+  }
+
+
 }
