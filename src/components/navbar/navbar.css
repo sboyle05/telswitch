@@ -2,3 +2,69 @@
 white-space: nowrap;
 /* margin-left: 10px; */
 }
+
+.navBarLogo{
+  max-height: 50px;
+}
+
+.navContainer{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+/* @media (min-width: 640px) { /* sm
+  .navContainer {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
+*/
+@media (max-width: 1024px) {
+  .navContainer {
+    margin-right: 0;
+    padding-right: 0;
+   padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 860px) {
+  .navContainer {
+    margin-right: 0;
+    padding-right: 0;
+    padding-bottom: 8px;
+    /* margin-bottom: 20px; */
+  }
+}
+
+@media (max-width: 764px) {
+  .navContainer {
+    margin-right: 0;
+    padding-right: 0;
+    padding-bottom: 0px;
+    /* margin-bottom: 20px; */
+  }
+  .navBarLogo{
+    max-width: 50vh;
+  }
+}
+
+@media (max-width: 764px) {
+
+  .navBarLogo{
+    max-width: 35vh;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 358px) {
+
+.navContainer {
+  position: relative; /* This ensures absolute positioning is relative to the navbar */
+  display: flex;
+  /* Rest of your styles */
+}
+.navButton{
+  right: 1rem;
+}
+}
