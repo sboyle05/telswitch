@@ -11,11 +11,11 @@ const Navbar = () => {
 
 	return (
 		<nav className='bg-blue text-white pt-5 pb-1 fixed w-full z-50'>
-			<div className='container mx-auto mb-4 px-2 sm:px-2 lg:px-2 flex items-center justify-between'>
+			<div className='navContainer sm:px-2 lg:px-2 items-center'>
 				<div className='flex items-center'>
 					<span className='text-xl font-semibold'>
 						<img
-							className='h-12'
+							className='navBarLogo'
 							src='/assets/tsLogo.png'
 							alt='TelSwitch Logo'
 						/>
@@ -23,7 +23,7 @@ const Navbar = () => {
 				</div>
 
 				<button
-					className='text-white inline-flex p-3 rounded md:hidden ml-auto hover:text-white outline-none'
+					className='navButton text-white inline-flex p-3 rounded md:hidden ml-auto hover:text-white outline-none'
 					onClick={() => setIsOpen(!isOpen)}
 				>
 					<svg
