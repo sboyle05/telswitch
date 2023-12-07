@@ -33,7 +33,7 @@ white-space: nowrap;
   .navContainer {
     margin-right: 0 !important;
     padding-right: 0 !important;
-    padding-bottom: 0px;
+    padding-bottom: 10px;
   }
   .navBarLogo{
     max-width: 35vh;
