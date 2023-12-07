@@ -29,6 +29,7 @@
 
 .textSectionRight{
   margin-left: 20px;
+  max-width: 80vh;
 }
 
 .individualService:nth-child(even) {
