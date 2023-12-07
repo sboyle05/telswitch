@@ -10,14 +10,14 @@ white-space: nowrap;
 .navContainer{
   display: flex;
   flex-direction: row;
-  margin-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 @media (max-width: 1024px) {
   .navContainer {
     margin-right: 0;
     padding-right: 0;
-   padding-bottom: 5px;
+    padding-bottom: 15px;
   }
 }
 
@@ -25,28 +25,22 @@ white-space: nowrap;
   .navContainer {
     margin-right: 0;
     padding-right: 0;
-    padding-bottom: 8px;
+    padding-bottom: 15px;
   }
 }
 
 @media (max-width: 764px) {
   .navContainer {
-    margin-right: 0;
-    padding-right: 0;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
     padding-bottom: 0px;
   }
-  .navBarLogo{
-    max-width: 50vh;
-  }
-}
-
-@media (max-width: 764px) {
-
   .navBarLogo{
     max-width: 35vh;
     margin-left: 20px;
   }
 }
+
 
 @media (max-width: 358px) {
 
