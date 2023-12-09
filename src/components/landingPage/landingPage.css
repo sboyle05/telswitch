@@ -2,7 +2,10 @@
 .landingPageContainer{
   min-height: 84vh;
 }
-
+.landingContainer{
+  display: flex;
+  justify-content: space-between;
+}
 .textOverlay {
   font-family: 'Oxygen', sans-serif;
   font-size: 2vw;
@@ -22,6 +25,31 @@
   transform: translate(-50%, -50%);
   max-width: 100%;
   text-align: center;
+}
+
+.addressContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 1rem;
+}
+
+.insightBlock{
+display: flex;
+justify-content: center;
+align-items: center;
+color: #003151;
+font-size: 2rem;
+margin-right: -15vh;
+margin-left: 8vh;
+}
+.walkingManImg{
+  max-height: 30vh;
+  margin-top: 20px;
+  margin-right: 4vh;
+  margin-left: -4vh;
+  z-index: 5;
+  padding-bottom: 1vh;
 }
 
 @media (max-width: 768px) {

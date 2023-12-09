@@ -6,7 +6,10 @@
   padding-bottom: 20px;
   border-bottom: 5px solid #003151;
 }
-
+.serviceDetailImg{
+  max-width: 40vw;
+  border-radius: 15px;
+}
 .serviceContainer{
   min-height: 82vh;
 }
@@ -74,4 +77,42 @@
   height: 30px;
   font-weight: bold;
   cursor: pointer;
+}
+
+@media (max-width: 807px) {
+
+  .commentTextImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw; /* This should be the width you want your image to be */
+    box-sizing: border-box; /* This ensures padding is included in the width */
+    padding: 5px; /* Adjust padding to ensure it's within the 90vw */
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .textImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw; /* This should be the width you want your image to be */
+    box-sizing: border-box; /* This ensures padding is included in the width */
+    padding: 5px; /* Adjust padding to ensure it's within the 90vw */
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .serviceDetailImg{
+    width: 100%;
+    max-height: 40vh;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  .service-detail-paragraph {
+    /* No need to set width since it's a block element and will naturally fill its container */
+    margin: 10px 0; /* Updated to remove horizontal margins */
+    text-align: justify;
+  }
 }
