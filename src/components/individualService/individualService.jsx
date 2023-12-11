@@ -27,11 +27,11 @@ const IndividualService = ({ serviceTitle, serviceEntry }) => {
 
   return (
   <>
-      <section className="serviceContainer mt-24 ml-8 mr-8">
-      <h1 className="service-detail-title mt-4 font-bold text-2xl">{serviceTitle}</h1>
+      <section className="serviceContainer mt-28 ml-8 mr-8">
+      <h1 className="service-detail-title font-bold text-2xl">{serviceTitle}</h1>
       <section className='textImage'>
         <img
-          className="serviceImg"
+          className="serviceDetailImg"
           src={serviceEntry.fields.serviceImage.fields.file.url}
           alt={serviceEntry.fields.title}
         />
