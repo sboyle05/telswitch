@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../../tailwind.css';
-import './navbar.css'
+import './navbar.css';
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 

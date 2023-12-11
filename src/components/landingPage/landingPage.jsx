@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import './landingPage.css';
-import { fetchEntry } from '../../contenfulService';
+import { fetchEntries } from '../../contenfulService';
 import '../../tailwind.css';
 
 
@@ -9,24 +9,30 @@ const LandingPage = () => {
 	const [content, setContent] = useState(null);
 
 	useEffect(() => {
-		const entryId = '1EirkGrxEZLiKshv21CELR';
-		fetchEntry(entryId)
-			.then((entry) => {
-				setContent(entry.fields);
-			})
-			.catch((error) => {
-				console.error('Error fetching content', error);
-			});
-	}, []);
+    fetchEntries({ content_type: 'landingPage', order: 'sys.createdAt' })
+      .then((response) => {
+        setContent(response.items[0]);
+      })
+      .catch((error) => {
+        console.error('Error fetching content', error);
+      });
+  }, []);
+
+	// const title = content?.fields?.title;
+  const landingpageImage = content?.fields?.landingpageImage;
+  const briefAbout = content?.fields?.briefAbout;
+	const address = content?.fields?.addressContainer;
+	const walkingMan = content?.fields?.walkingManContainer?.fields?.file?.url;
+	const walkingManTitle = content?.fields?.walkingManContainer?.fields.title
 
 	return (
 		<>
 		<section className='landingPageContainer mt-20'>
 			{content ? (
 				<>
-					<h1 className='text-5xl font-bold'>{content.title}</h1>
+					{/* <h1 className='text-5xl font-bold'>{title}</h1> */}
 
-					{content.landingpageImage && (
+					{landingpageImage && (
 						<div className='w-full relative overflow-hidden'>
 							{/* Video Container */}
 							<div className='w-full relative overflow-hidden'>
@@ -37,7 +43,7 @@ const LandingPage = () => {
 									playsInline
 									style={{ maxHeight: '55vh' }}
 									className='w-full object-cover max-h-[desired-max-height]'
-									src={content.landingpageImage.fields.file.url}
+									src={landingpageImage.fields.file.url}
 									type='video/mp4'
 								/>
 
@@ -50,10 +56,21 @@ const LandingPage = () => {
 							</div>
 						</div>
 					)}
-					<div className='text-blue mt-4 text-xl ml-10 mr-10 mx-auto max-w-screen-lg '>
-						{content.briefAbout &&
-							documentToReactComponents(content.briefAbout)}
+					<section className='landingContainer'>
+					<div className='addressContainer text-blue mt-4 text-xl ml-10 mr-10 mx-auto max-w-screen-lg '>
+					{address &&
+						documentToReactComponents(address)}
+				</div>
+					<div className='insightBlock'>
+						{briefAbout &&
+							documentToReactComponents(briefAbout)}
 					</div>
+					<img
+          className="walkingManImg"
+          src={walkingMan}
+          alt={walkingManTitle}
+        />
+					</section>
 				</>
 			) : (
 				<p>Loading...</p>
