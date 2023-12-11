@@ -30,12 +30,16 @@ const Contact = () => {
                 alt={content[0].fields.contactImage.fields.title || 'Contact Us'}
               />
             )}
+					<section className='contactText'>
+					<section className='contactTitle'>
 					<h1 className='mt-4 font-bold text-2xl'>
 						{content[0].fields.contactTitle}
 					</h1>
+					</section>
           	<div className='mt-4 ml-8 mr-8'>
             {content[0].fields.contactText && documentToReactComponents(content[0].fields.contactText)}
           </div>
+					</section>
           </>
 				) : (
 					<p>Loading...</p>
