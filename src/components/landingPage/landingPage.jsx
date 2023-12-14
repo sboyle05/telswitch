@@ -42,7 +42,7 @@ const LandingPage = () => {
 									loop
 									muted
 									playsInline
-									style={{ maxHeight: '55vh' }}
+									style={{ maxHeight: '50vh' }}
 									// className='w-full object-cover max-h-[desired-max-height]'
 									className='videoTag'
 									src={landingpageImage.fields.file.url}
