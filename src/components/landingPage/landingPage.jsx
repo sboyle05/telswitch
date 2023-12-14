@@ -28,6 +28,7 @@ const LandingPage = () => {
 	return (
 		<>
 		<section className='landingPageContainer mt-20'>
+
 			{content ? (
 				<>
 					{/* <h1 className='text-5xl font-bold'>{title}</h1> */}
@@ -35,29 +36,30 @@ const LandingPage = () => {
 					{landingpageImage && (
 						<div className='w-full relative overflow-hidden'>
 							{/* Video Container */}
-							<div className='w-full relative overflow-hidden'>
+							<div className='videoContainer w-full relative overflow-hidden'>
 								<video
 									autoPlay
 									loop
 									muted
 									playsInline
 									style={{ maxHeight: '55vh' }}
-									className='w-full object-cover max-h-[desired-max-height]'
+									// className='w-full object-cover max-h-[desired-max-height]'
+									className='videoTag'
 									src={landingpageImage.fields.file.url}
 									type='video/mp4'
 								/>
 
 								{/* Text Overlay */}
-								<div className='absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center'>
+								{/* <div className='absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center'>
 									<p className='textOverlay'>
 										Bringing Insight Into Life’s Digital Fingerprints
 									</p>
-								</div>
+								</div> */}
 							</div>
 						</div>
 					)}
 					<section className='landingContainer'>
-					<div className='addressContainer text-blue mt-4 text-xl ml-10 mr-10 mx-auto max-w-screen-lg '>
+					<div className='addressContainer text-blue'>
 					{address &&
 						documentToReactComponents(address)}
 				</div>

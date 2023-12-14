@@ -69,7 +69,7 @@ const Services = () => {
 										{serviceEntry.fields.title && (
 											<Link
 												to={path}
-												className={`font-bold text-lg ${
+												className={`servicesLink ${
 													index % 2 === 0
 														? 'textSectionRightLink'
 														: 'textSectionLeftLink'
