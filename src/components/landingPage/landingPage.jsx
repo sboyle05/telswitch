@@ -28,6 +28,7 @@ const LandingPage = () => {
 	return (
 		<>
 		<section className='landingPageContainer mt-20'>
+
 			{content ? (
 				<>
 					{/* <h1 className='text-5xl font-bold'>{title}</h1> */}
@@ -35,14 +36,15 @@ const LandingPage = () => {
 					{landingpageImage && (
 						<div className='w-full relative overflow-hidden'>
 							{/* Video Container */}
-							<div className='w-full relative overflow-hidden'>
+							<div className='videoContainer w-full relative overflow-hidden'>
 								<video
 									autoPlay
 									loop
 									muted
 									playsInline
 									style={{ maxHeight: '55vh' }}
-									className='w-full object-cover max-h-[desired-max-height]'
+									// className='w-full object-cover max-h-[desired-max-height]'
+									className='videoTag'
 									src={landingpageImage.fields.file.url}
 									type='video/mp4'
 								/>
@@ -57,7 +59,7 @@ const LandingPage = () => {
 						</div>
 					)}
 					<section className='landingContainer'>
-					<div className='addressContainer text-blue mt-4 text-xl ml-10 mr-10 mx-auto max-w-screen-lg '>
+					<div className='addressContainer text-blue'>
 					{address &&
 						documentToReactComponents(address)}
 				</div>

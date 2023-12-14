@@ -12,8 +12,13 @@
 }
 
 .serviceImg{
-  max-width: 40vw;
+  max-width: 35vw;
   border-radius: 15px;
+}
+
+.servicesLink{
+  font-weight: bold;
+  font-size: 1.25rem;
 }
 
 .textSectionLeft{
