@@ -135,3 +135,17 @@
   max-width: 90vh;
 }
 }
+
+/* @media (min-width: 3500px) {
+.service-detail-title{
+  font-size: 3rem;
+  padding-top: 2rem;
+}
+.service-detail-paragraph{
+  font-size: 2.75rem;
+
+}
+.commentTitle{
+  font-size: 2.75rem;
+}
+} */

@@ -8,11 +8,12 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
 .serviceImg{
-  max-width: 35vw;
+  max-width: 30vw;
   border-radius: 15px;
 }
 
@@ -23,6 +24,8 @@
 
 .textSectionLeft{
   margin-right: 20px;
+  max-width: 80vh;
+
 }
 .textSectionLeftLink{
   margin-right: 20px;
@@ -139,3 +142,29 @@
   }
 
 }
+
+/* @media (min-width: 2500px) {
+  .servicesLink{
+    font-weight: bold;
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 3500px) {
+  .servicesLink{
+    font-weight: bold;
+    font-size: 2.75rem;
+  }
+  .textSectionRight{
+    margin-left: 20px;
+    max-width: 80vh;
+    font-size: 2.0rem;
+  }
+
+.textSectionLeft{
+  margin-right: 20px;
+  max-width: 80vh;
+  font-size: 2.0rem;
+}
+
+} */

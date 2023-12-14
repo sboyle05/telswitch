@@ -53,3 +53,10 @@ white-space: nowrap;
   right: 1rem;
 }
 }
+
+/* @media (min-width: 3500px) {
+.navLinksLg{
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+} */
