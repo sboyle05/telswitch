@@ -13,3 +13,9 @@
   align-items: flex-start;
   margin-left: 3vh;
 }
+
+.emailClick:hover,
+.phoneClick:hover {
+  color: #0077cc;
+  cursor: pointer;
+}
