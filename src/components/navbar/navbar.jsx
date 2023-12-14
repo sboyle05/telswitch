@@ -14,11 +14,14 @@ const Navbar = () => {
 			<div className='navContainer sm:px-2 lg:px-2 items-center'>
 				<div className='flex items-center'>
 					<span className='text-xl font-semibold'>
+					<Link
+						to='/'>
 						<img
 							className='navBarLogo'
 							src='/assets/tsLogo.png'
 							alt='TelSwitch Logo'
 						/>
+						</Link>
 					</span>
 				</div>
 
