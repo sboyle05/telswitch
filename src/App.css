@@ -15,4 +15,5 @@ html, body {
   flex: 1;
   margin-top: -10px;
   padding-bottom: 40px;
+  height: 90vh;
 }
