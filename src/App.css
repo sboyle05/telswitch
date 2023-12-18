@@ -12,7 +12,7 @@ html, body {
 
 
 .contentWrapper {
-  flex: 1; /* Flex grow to use available space */
+  flex: 1;  /* Flex grow to use available space */
   overflow-y: auto;
   padding-top: 70px;
   padding-bottom: 0px;
