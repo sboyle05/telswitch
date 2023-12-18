@@ -19,7 +19,7 @@ const About = () => {
 	console.log('contentAbout:', content);
 	return (
 		<>
-			<section className='aboutContainer mt-24 ml-8 mr-8'>
+			<section className='aboutContainer mt-4 ml-8 mr-8'>
 				{content ? (
 					<>
 						{content[0].fields.aboutImage && (

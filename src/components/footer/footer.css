@@ -1,4 +1,6 @@
 .footerContainer {
+  position: fixed;
+  bottom: 0;
   background-color: #003151;
   display: flex;
   align-items: center;

@@ -27,7 +27,7 @@ const IndividualService = ({ serviceTitle, serviceEntry }) => {
 
   return (
   <>
-      <section className="serviceContainer mt-28 ml-8 mr-8">
+      <section className="serviceContainer mt-8 mb-16 ml-8 mr-8">
       <h1 className="service-detail-title font-bold text-2xl">{serviceTitle}</h1>
       <section className='textImage'>
         <img

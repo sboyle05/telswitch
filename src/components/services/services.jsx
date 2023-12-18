@@ -20,7 +20,7 @@ const Services = () => {
 	console.log("CONTENT::", content)
 	return (
 		<>
-			<section className='servicesContainer mt-28 ml-8 mr-8'>
+			<section className='servicesContainer mt-8 mb-16 ml-8 mr-8'>
 				{content ? (
 					<>
 						<h1 className='servicesTitle mt-4 font-bold text-2xl'>
