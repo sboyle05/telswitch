@@ -13,8 +13,8 @@ html, body {
 
 .contentWrapper {
   flex: 1; /* Flex grow to use available space */
-  overflow-y: auto; /* Enable scrolling within the content wrapper */
-  padding-top: 70px; /* Adjust according to your navbar height */
-  padding-bottom: 0px; /* Adjust according to your footer height */
-  margin-top: 0px; /* If you need to pull content under the navbar */
+  overflow-y: auto;
+  padding-top: 70px;
+  padding-bottom: 0px;
+  margin-top: 0px;
 }
