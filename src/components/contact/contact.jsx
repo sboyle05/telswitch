@@ -20,12 +20,12 @@ const Contact = () => {
 	console.log('CONTENT:', content);
 	return (
 		<>
-			<section className='contactContainer mt-8'>
+			<section className='contactContainer mb-8'>
 				{content ? (
 					<>
 						{content[0].fields.contactImage && (
 							<img
-								className='contactImage mt-14  w-full object-cover max-h-[desired-max-height]'
+								className='contactImage w-full object-cover max-h-[desired-max-height]'
 								src={`https:${content[0].fields.contactImage.fields.file.url}`}
 								alt={
 									content[0].fields.contactImage.fields.title || 'Contact Us'

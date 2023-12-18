@@ -27,7 +27,7 @@ const LandingPage = () => {
 
 	return (
 		<>
-		<section className='landingPageContainer mt-20'>
+		<section className='landingPageContainer'>
 
 			{content ? (
 				<>
