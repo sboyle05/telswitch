@@ -81,10 +81,10 @@ html {
 
 @media only screen and (max-width: 1024px) and (max-height: 1366px) {
 	.videoContainer {
-		height: 45vh;
+		min-height: 45vh;
 	}
 	.landingContainer {
-		height: 43vh;
+		min-height: 43vh;
 	}
 	.walkingManImg {
 		padding-bottom: 1vh;
