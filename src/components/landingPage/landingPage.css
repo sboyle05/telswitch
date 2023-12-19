@@ -222,7 +222,16 @@
 				}
 
 			}
+			@media only screen
+			and (orientation: landscape)
+			and (min-width: 834px)
+			and (max-width: 1194px){
 
+				.walking-man-img{
+					max-height: 30vh;
+				}
+
+			}
 
 			@media (min-width: 2000px){
 				.insight-block{
