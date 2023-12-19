@@ -55,7 +55,9 @@
     align-items: center;
     margin-bottom: 20px;
   } */
-
+  .servicesContainer{
+    margin-top: 70px;
+  }
   .serviceImg{
     margin-top: 10px;
     max-width: 90vw;
