@@ -87,7 +87,7 @@
   }
 }
 
-@media (max-width: 807px) {
+@media (max-width: 840px) {
   .individualService.flex-row, .individualService.flex-row-reverse{
     display: flex;
     flex-direction: column;
