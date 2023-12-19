@@ -43,7 +43,7 @@ const Contact = () => {
 									documentToReactComponents(content[0].fields.contactText)}
 							</div>
 							<div className='mt-4 ml-8 mr-8'>
-								<span>
+								<span className='spanTitle'>
 									{content[0].fields.emailTitle}
 								</span>{' '}
 								<a  className='emailClick' href={`mailto:${content[0].fields.emailAddress}`}>
@@ -51,7 +51,7 @@ const Contact = () => {
 								</a>
 							</div>
 							<div className='mt-4 ml-8 mr-8'>
-								<span>{content[0].fields.phoneTitle}</span>
+								<span className='spanTitle'>{content[0].fields.phoneTitle}</span>
 								{'  '}
 								<a
 
