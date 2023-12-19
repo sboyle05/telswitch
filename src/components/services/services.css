@@ -1,162 +1,212 @@
-.listedServices{
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 50px;
+.listedServices {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
 }
 
-.individualService{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
+.individualService {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
 }
 
-.serviceImg{
-  max-width: 30vw;
-  border-radius: 15px;
+.serviceImg {
+	max-width: 30vw;
+	border-radius: 15px;
 }
 
-.servicesLink{
-  font-weight: bold;
-  font-size: 1.25rem;
+.servicesLink {
+	font-weight: bold;
+	font-size: 1.25rem;
 }
 
-.textSectionLeft{
-  margin-right: 20px;
-  max-width: 80vh;
-
+.textSectionLeft {
+	margin-right: 20px;
+	max-width: 80vh;
 }
-.textSectionLeftLink{
-  margin-right: 20px;
-}
-
-.textSectionRightLink{
-  margin-left: 20px;
+.textSectionLeftLink {
+	margin-right: 20px;
 }
 
-.textSectionRight{
-  margin-left: 20px;
-  max-width: 80vh;
+.textSectionRightLink {
+	margin-left: 20px;
+}
+
+.textSectionRight {
+	margin-left: 20px;
+	max-width: 80vh;
 }
 
 .individualService:nth-child(even) {
-  flex-direction: row;
+	flex-direction: row;
 }
 
 .individualService:nth-child(odd) {
-  flex-direction: row-reverse;
+	flex-direction: row-reverse;
 }
 
 @media (max-width: 989px) {
-  /* .individualService.flex-row, .individualService.flex-row-reverse{
+	/* .individualService.flex-row, .individualService.flex-row-reverse{
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 20px;
   } */
-  .servicesContainer{
-    margin-top: 70px;
-  }
-  .serviceImg{
-    margin-top: 10px;
-    max-width: 90vw;
-    max-height: 30vh;
-    object-fit: cover;
-    border-radius: 15px;
-  }
-  .textSectionLeftLink{
-    margin-top: 10px;
-    display: flex;
-    justify-content:space-between;
+	.servicesContainer {
+		margin-top: 70px;
+	}
+	.serviceImg {
+		margin-top: 10px;
+		max-width: 90vw;
+		max-height: 30vh;
+		object-fit: cover;
+		border-radius: 15px;
+	}
+	.textSectionLeftLink {
+		margin-top: 10px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.textSectionRightLink {
+		margin-top: 10px;
+		margin-left: 20px;
+		display: flex;
+		justify-content: space-between;
+	}
 
-
-  }
-  .textSectionRightLink{
-    margin-top: 10px;
-    margin-left: 20px;
-    display: flex;
-    justify-content:space-between;
-
-  }
-
-  .servicesTitleContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+	.servicesTitleContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 @media (max-width: 840px) {
-  .individualService.flex-row, .individualService.flex-row-reverse{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    max-width: 90vh;
-    margin-left: 0;
+	.individualService.flex-row,
+	.individualService.flex-row-reverse {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 20px;
+		max-width: 90vh;
+		margin-left: 0;
+	}
+	.individualService a {
+		margin-left: 0;
+		font-size: 1rem;
+	}
+	.serviceImg {
+		margin-top: 10px;
+		width: 90vw;
+		max-height: 40vh;
+		object-fit: cover;
+		border-radius: 15px;
+	}
+	.textSectionLeftLink {
+		margin-top: 10px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.textSectionLeft {
+		margin-left: 20px;
+		width: 90vw;
+	}
+	.textSectionRightLink {
+		margin-top: 10px;
+		margin-left: 20px;
+		display: flex;
+		justify-content: space-between;
+	}
 
-  }
-  .individualService a{
-    margin-left: 0;
-    font-size: 1rem;
-  }
-  .serviceImg{
-    margin-top: 10px;
-    width: 90vw;
-    max-height: 40vh;
-    object-fit: cover;
-    border-radius: 15px;
-  }
-  .textSectionLeftLink{
-    margin-top: 10px;
-    display: flex;
-    justify-content:space-between;
-  }
-  .textSectionLeft{
-    margin-left: 20px;
-    width: 90vw;
-  }
-  .textSectionRightLink{
-    margin-top: 10px;
-    margin-left: 20px;
-    display: flex;
-    justify-content:space-between;
+	.servicesTitleContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
-  }
-
-  .servicesTitleContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-
-
-  .textSectionLeft, .textSectionRight{
-    margin-left: 0;
-    margin-right: 0;
-    width: 90vw;
-  }
-  .textSectionRightLink, .textSectionLeftLink{
-    margin-top: 10px;
-    margin-left: 20px;
-    display: flex;
-    justify-content:space-between;
-
-  }
-
+	.textSectionLeft,
+	.textSectionRight {
+		margin-left: 0;
+		margin-right: 0;
+		width: 90vw;
+	}
+	.textSectionRightLink,
+	.textSectionLeftLink {
+		margin-top: 10px;
+		margin-left: 20px;
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
-@media (min-width: 2000px){
+@media (max-width: 950px) and (min-height: 1000px) {
+	.individualService.flex-row,
+	.individualService.flex-row-reverse {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 20px;
+		max-width: 90vh;
+		margin-left: 0;
+	}
+	.individualService a {
+		margin-left: 0;
+		font-size: 1rem;
+	}
+	.serviceImg {
+		margin-top: 10px;
+		width: 90vw;
+		max-height: 40vh;
+		object-fit: cover;
+		border-radius: 15px;
+	}
+	.textSectionLeftLink {
+		margin-top: 10px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.textSectionLeft {
+		margin-left: 20px;
+		width: 90vw;
+	}
+	.textSectionRightLink {
+		margin-top: 10px;
+		margin-left: 20px;
+		display: flex;
+		justify-content: space-between;
+	}
 
-  .servicesContainer{
-    font-size: 2rem;
-  }
-  a{
-    font-size: 1.5rem;
-  }
-  .servicesLink{
-    font-size: 2.5rem;
-  }
+	.servicesTitleContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.textSectionLeft,
+	.textSectionRight {
+		margin-left: 0;
+		margin-right: 0;
+		width: 90vw;
+	}
+	.textSectionRightLink,
+	.textSectionLeftLink {
+		margin-top: 10px;
+		margin-left: 20px;
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+@media (min-width: 2000px) {
+	.servicesContainer {
+		font-size: 2rem;
+	}
+	a {
+		font-size: 1.5rem;
+	}
+	.servicesLink {
+		font-size: 2.5rem;
+	}
 }
