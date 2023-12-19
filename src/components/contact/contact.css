@@ -19,7 +19,9 @@
   align-items: flex-start;
   margin-left: 3vh;
 }
-
+.spanTitle{
+  font-weight: 500;
+}
 .emailClick:hover,
 .phoneClick:hover {
   color: #0077cc;
