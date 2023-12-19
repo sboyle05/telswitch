@@ -5,17 +5,25 @@ html, body {
 }
 
 #root {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Header, content, footer */
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 
-.contentWrapper {
-  flex: 1;  /* Flex grow to use available space */
+/* .contentWrapper {
+  flex: 1;
   overflow-y: auto;
   padding-top: 70px;
   padding-bottom: 0px;
   margin-top: 0px;
+
+} */
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
 
 }
