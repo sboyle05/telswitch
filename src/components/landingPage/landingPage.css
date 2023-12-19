@@ -207,4 +207,30 @@
 				}
 			}
 
-			/* Media query for landscape mode */
+			@media only screen
+			and (orientation: portrait)
+			and (min-width: 768px)
+			and (max-width: 1100px){
+				.insight-block{
+					margin-left: 10vh;
+					max-width: 50vh;
+					margin-right: 10vh;
+
+				}
+				.video-container{
+					max-height: 60vh;
+				}
+
+			}
+
+
+			@media (min-width: 2000px){
+				.insight-block{
+					max-width: 85vh;
+					font-size: 4rem;
+				}
+				.address-container{
+					font-size: 1.5rem;
+				}
+
+				}

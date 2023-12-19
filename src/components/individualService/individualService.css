@@ -165,7 +165,15 @@
   }
 }
 
-
+@media (min-width: 2000px){
+  .serviceContainer{
+    font-size: 2rem;
+    margin-top: 5vh;
+  }
+  .service-detail-title{
+    font-size: 2.25rem;
+  }
+}
 
 /* @media (min-width: 3500px) {
 .service-detail-title{
