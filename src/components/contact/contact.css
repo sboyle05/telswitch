@@ -1,35 +1,43 @@
-.contactImage{
-  max-height: 45vh;
-  width: 100%;
+.contactImage {
+	max-height: 45vh;
+	width: 100%;
 }
-.contactText{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  ;
-
+.contactText {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
-.contactContainer{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.contactContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-.contactTitle{
-  display: flex;
-  align-items: flex-start;
-  margin-left: 3vh;
+.contactTitle {
+	display: flex;
+	align-items: flex-start;
+	margin-left: 3vh;
 }
-.spanTitle{
-  font-weight: 500;
+.spanTitle {
+	font-weight: 500;
 }
 .emailClick:hover,
 .phoneClick:hover {
-  color: #0077cc;
-  cursor: pointer;
+	color: #0077cc;
+	cursor: pointer;
 }
 
-@media (min-width: 1000px){
-  .contactText{
-    margin-top: 2rem;
-  }
+@media (min-width: 1000px) {
+	.contactText {
+		margin-top: 2rem;
+	}
+}
+
+@media (min-width: 2000px) {
+	.contactText {
+		font-size: 2rem;
+	}
+	.contactText h1{
+		font-size: 2.5rem;
+    margin-left: -1vh;
+	}
 }
