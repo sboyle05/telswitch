@@ -91,6 +91,7 @@
 .allComments{
   padding-left: 5vh;
   padding-right: 5vh;
+  padding-bottom: 70px;
 }
 @media (max-width: 900px) {
   /* .serviceContainer{
