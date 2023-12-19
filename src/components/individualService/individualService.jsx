@@ -27,20 +27,25 @@ const IndividualService = ({ serviceTitle, serviceEntry }) => {
 
   return (
   <>
-      <section className="serviceContainer mt-8 mb-16">
+      <section className="serviceContainer mt-12 mb-16">
 
       <section className='textImage'>
+        <section className='textImageContainer'>
         <img
           className="serviceDetailImg"
           src={serviceEntry.fields.serviceImage.fields.file.url}
           alt={serviceEntry.fields.title}
         />
+        </section>
+        <section className='service-detail-title-container'>
         <h1 className="service-detail-title font-bold text-2xl">{serviceTitle}</h1>
+
         {serviceEntry.fields.serviceDescription &&
           documentToReactComponents(
             serviceEntry.fields.serviceDescription,
             options
           )}
+      </section>
       </section>
       <section className='allComments'>
         {comments && comments.map((comment, index) => (
