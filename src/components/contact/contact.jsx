@@ -34,16 +34,16 @@ const Contact = () => {
 						)}
 						<section className='contactText'>
 							<section className='contactTitle'>
-								<h1 className='mt-4 font-bold text-2xl'>
+								<h1 className='font-bold text-2xl'>
 									{content[0].fields.contactTitle}
 								</h1>
 							</section>
 							<section className='contactDetails'>
-							<div className='mt-4 ml-8 mr-8'>
+							<div className='mt-4 '>
 								{content[0].fields.contactText &&
 									documentToReactComponents(content[0].fields.contactText)}
 							</div>
-							<div className='mt-4 ml-8 mr-8'>
+							<div className='mt-4'>
 								<span className='spanTitle'>
 									{content[0].fields.emailTitle}
 								</span>{' '}
@@ -51,7 +51,7 @@ const Contact = () => {
 									{content[0].fields.emailAddress}
 								</a>
 							</div>
-							<div className='mt-4 ml-8 mr-8'>
+							<div className='mt-4'>
 								<span className='spanTitle'>{content[0].fields.phoneTitle}</span>
 								{'  '}
 								<a
@@ -61,7 +61,7 @@ const Contact = () => {
 									<span className='phoneClick'> {content[0].fields.phoneNumber}</span>
 								</a>
 							</div>
-							<div className='mt-4 ml-8 mr-8'>
+							<div className='mt-4 '>
 								{content[0].fields.address &&
 									documentToReactComponents(content[0].fields.address)}
 							</div>
