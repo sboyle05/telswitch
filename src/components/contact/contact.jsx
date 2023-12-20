@@ -38,6 +38,7 @@ const Contact = () => {
 									{content[0].fields.contactTitle}
 								</h1>
 							</section>
+							<section className='contactDetails'>
 							<div className='mt-4 ml-8 mr-8'>
 								{content[0].fields.contactText &&
 									documentToReactComponents(content[0].fields.contactText)}
@@ -64,6 +65,7 @@ const Contact = () => {
 								{content[0].fields.address &&
 									documentToReactComponents(content[0].fields.address)}
 							</div>
+							</section>
 						</section>
 					</>
 				) : (
