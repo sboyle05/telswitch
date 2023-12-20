@@ -13,14 +13,6 @@ html, body {
 }
 
 
-/* .contentWrapper {
-  flex: 1;
-  overflow-y: auto;
-  padding-top: 70px;
-  padding-bottom: 0px;
-  margin-top: 0px;
-
-} */
 .contentWrapper {
   display: flex;
   flex-direction: column;

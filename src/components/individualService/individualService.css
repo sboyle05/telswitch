@@ -95,10 +95,7 @@
   padding-bottom: 70px;
 }
 @media (max-width: 900px) {
-  /* .serviceContainer{
-    margin-left: 0px;
-    margin-right: 0px;
-  } */
+
   .textImageContainer{
     object-fit: cover;
     width: 100%;
