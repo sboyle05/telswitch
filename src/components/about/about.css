@@ -1,6 +1,7 @@
 .aboutContainer{
   display: flex;
   flex-direction: row;
+  color: #073051;
 }
 
 .aboutImage{

@@ -1,3 +1,7 @@
+.servicesContainer{
+	color: #073051;
+}
+
 .listedServices {
 	display: flex;
 	flex-direction: column;
