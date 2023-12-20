@@ -25,7 +25,7 @@ function App() {
 
   return (
     <Router>
-      {/* <div id="root"> */}
+
       <Navbar/>
       <div className="contentWrapper">
       <Routes>
@@ -57,7 +57,7 @@ function App() {
       </Routes>
       </div>
       <Footer/>
-      {/* </div> */}
+
     </Router>
   );
 }
